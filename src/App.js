@@ -1,23 +1,40 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  let valueA = "Hello World!";
+  let valueB = "Now!!!";
+
+  let students = [ "Jonathon", "Hunter", "Caleb" ];
+
+  let student_detail = {
+    firstName: "Jonathon",
+    lastName: "Pinson",
+    grade: "C-"
+  };
+
+  let all_students = [ 
+  {
+    firstName: "Jonathon",
+    lastName: "Pinson",
+    grade: "C-"   
+  },
+   {
+    firstName: "Hunter",
+    lastName: "Davis",
+    grade: "C-"
+   },
+   {
+    firstName: "Caleb",
+    lastName: "Johnson",
+    grade: "C-"
+   }];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      { all_students.map((student) => {
+        return ( <p>{student.firstName} {student.lastName} {student.grade}</p> )
+      }) }
     </div>
   );
 }
