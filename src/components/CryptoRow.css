@@ -1,0 +1,49 @@
+.coinRow {
+    display: flex;
+    padding: 1em;
+    border-top: 1px grey solid;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 100%;
+}
+
+.coinIMG img {
+    width: 18px;
+    height: auto;
+    margin-left: 2em;
+}
+
+.coinSym {
+    flex: 1;
+    margin-left: 2em;
+}
+
+.coinName {
+    flex: 4;
+    margin-left: 2em;
+}
+
+.coinPrice {
+    flex: 2;
+    margin-left: 2em;
+    text-align: right;
+}
+
+.coin1h {
+    flex: 1;
+    margin-left: 1em;
+    text-align: right;
+}
+
+.coin4h {
+    flex: 1;
+    margin-left: 1em;
+    text-align: right;
+}
+
+.coin24h {
+    flex: 1;
+    margin-left: 1em;
+    text-align: right;
+}
