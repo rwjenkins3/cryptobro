@@ -3,7 +3,7 @@ import axios from 'axios';
 
 import './App.css';
 import { CryptoRow } from './components/CryptoRow';
-import data from './data';
+// import data from './data';
 
 
 function App() {
@@ -33,7 +33,7 @@ function App() {
 
   return (
     <div className="App">
-      <h2>Top {data.length} Coins</h2>
+      <h2>Top {coinData.length} Coins</h2>
 
       <div className='coinRow'>
         <div className='coinMC'>Rank</div>
